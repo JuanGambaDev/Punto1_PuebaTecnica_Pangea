@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    max-height: 2560px;
+}
+
+header{
+    width: 100%;
+    padding: 5% 5% 5% 5%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+    font-size: 32px;
+    margin-bottom: 5px; 
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px; 
+}
+
+label{
+    padding-right: 25px;     
+}
+
+input{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.header__form ::placeholder{
+    color: black;
+}
+
+.section1{
+    width: 100%;
+    padding: 5% 5% 5% 5%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.section1__form{
+    color: red;
+}
+
+.section1__form ::placeholder{
+    color: red;
+    text-align: right;
+}
+
+.section2__container{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1em;  
+}
+
+.section2__container--item{
+    background-color: steelblue;
+    height: 50px;
+    width: calc((100% - 10px) / 2);
+    flex: none;  
+    margin-bottom: 5px;
+    max-width: 200px;
+}
+
+.section2__container--item:nth-child(4n+3){
+   background-color: peru;
+}
+
+.section2__container--item:nth-child(4n+4){
+    background-color: peru;
+}
+
+@media (min-width:715px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+    }
+
+    header{
+        width: 50%;
+        padding: 5% 5% 5% 5%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 36px;
+    }
+
+    input{
+        width: 75%;
+    }
+
+    label{
+        padding-right: 40px;     
+    }
+
+    .section1{
+        width: 50%;
+        padding: 5% 2% 5% 5%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section2{
+        width: 100%;  
+    }
+    
+    .section2__container{
+        display: flex;
+        width: 100%;
+        min-width: 320px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 1em;   
+    }
+
+    .section2__container--item{
+        background-color: steelblue;
+        height: 100px;
+        width: calc((100% - 30px) / 4);
+        flex: none;  
+        margin-bottom: 10px;
+        max-width: 400px;
+    }
+}
+
